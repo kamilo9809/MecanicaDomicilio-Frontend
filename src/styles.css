@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding-inline: 12px;
+}
+
+h1, h2, h3, p, span {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+.fuente-krona {
+    font-family: 'Krona One', sans-serif !important;
+}
+
+.boton-animado {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.boton-animado:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    background-color: #1C274C; /* Cambia el color de fondo */
+    color: white;
+}
+
+
+.boton-animado2 {
+    padding: 5px 20px;
+    border: 1px solid gray;
+}
+
+.boton-animado2:hover {
+    background-color: #1C274C; /* Cambia el color de fondo */
+    color: white;
+}
+
+
+.icono-animado {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icono-animado:hover {
+    transform: scale(1.2);
+}
