@@ -1,0 +1,103 @@
+<div class="overflow-hidden">
+    <!-- header-mobile  -->
+    <header class="w-full h-fit border-b-2 border-gray-200">
+        <div class="flex items-center justify-between header-mobile">
+            <div></div>
+            <a href="/">
+                <h1 class="uppercase font-bold text-[24px] fuente-krona">Autodoom</h1>
+            </a>
+            <div class="cursor-pointer flex items-center">
+                <button (click)="toggleNavegacion()">
+                    <img class="w-5" src="./../../../../assets/icons/menu-hamburguesa.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav" [class.open]="isNavegacionOpen">
+            <div class="w-full flex justify-end">
+                <button (click)="toggleNavegacion()">
+                    <img class="w-5" src="./../../../../assets/icons/x.svg" alt="">
+                </button>
+            </div>
+            @if(isNavegacionOpen) {
+
+            <ul class="flex flex-col justify-evenly h-[60%]">
+                <li><a class="texto-variable" href="/">Inicio</a></li>
+                <li><a class="texto-variable" href="#">Sobre Nosotros</a></li>
+                <li><a class="texto-variable" href="#">Servicios</a></li>
+                <li><a class="texto-variable" href="#">Nuestro Trabajo</a></li>
+                <li><a class="texto-variable" href="/ecommerce">Comprar</a></li>
+                <li><a class="texto-variable" href="#">Contáctanos</a></li>
+            </ul>
+            <h1 class="uppercase font-bold border-none text-[24px] fuente-krona">Autodoom</h1>
+            }
+
+        </div>
+
+
+
+        <!-- header-desk -->
+        <div class="header-desk">
+            <section class="flex justify-center gap-10 items-center text-[13px] w-full">
+                <div class="inline-flex gap-1 items-center">
+                    <img class="max-w-5 rotate-[135deg]" src="./../../../../assets/icons/flecha-abajo.svg" alt="">
+                    <h2 class="texto-variable-heads">CL 53 # 34 37 - Medellín, Antioquia.</h2>
+                </div>
+
+                <div class="inline-flex gap-1 items-center">
+                    <img class="max-w-5" src="./../../../../assets/icons/telefono.svg" alt="">
+                    <h2 class="texto-variable-heads">(301) 755 - 6016</h2>
+                </div>
+
+                <div class="inline-flex gap-1 items-center">
+                    <img class="max-w-5" src="./../../../../assets/icons/email.svg" alt="">
+                    <h2 class="min-w-0 flex-grow whitespace-nowrap">contacto&#64;mecanicoadomiciliomedellin.com</h2>
+                </div>
+
+                <div class="flex items-center justify-center gap-4 w-32 border">
+                    <a class="w-5 py-3" href="#">
+                        <img class="w-5" src="./../../../../assets/icons/whatsapp.svg" alt="">
+                    </a>
+                    <a class="w-5" href="#">
+                        <img class="w-5" src="./../../../../assets/icons/facebook.svg" alt="">
+                    </a>
+                    <a class="w-5" href="#">
+                        <img class="w-5" src="./../../../../assets/icons/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <section class="header-desk pt-5">
+        <div class="w-full flex items-center justify-evenly">
+            <a href="/">
+                <h1 class="uppercase font-bold fuente-krona">Autodoom</h1>
+            </a>
+            <div></div>
+            <nav class="flex gap-12">
+                <ul class="flex items-center gap-6">
+                    <li><a class="texto-variable boton-animado" href="#">Inicio</a></li>
+                    <li><a class="texto-variable boton-animado" href="#">Sobre Nosotros</a></li>
+                    <li><a class="texto-variable boton-animado" href="#">Servicios</a></li>
+                    <li><a class="texto-variable boton-animado" href="#">Nuestro Trabajo</a></li>
+                    <li><a class="texto-variable boton-animado" href="/ecommerce">Comprar</a></li>
+                    <li><a class="texto-variable boton-animado" href="#">Contáctanos</a></li>
+                </ul>
+                <div class="flex items-center gap-5">
+                    <a href="#"><img class="w-5 icono-animado" src="./../../../../assets/icons/cart.svg" alt=""></a>
+                    <div>
+                        <button class="boton-animado2">Mi cuenta</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+<div class="w-full flex items-center justify-center">
+    <img class="max-w-4" src="./../../../../assets/icons/telefono.svg" alt="">
+    <h2 class="font-extralight">(301) 755 - 6016</h2>
+</div>
+
+
+</div>
