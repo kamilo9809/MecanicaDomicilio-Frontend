@@ -1,0 +1,42 @@
+.invert-svg {
+    filter: invert(100%);
+}
+
+@media screen and (min-width: 768px) {
+    .footer-responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-responsive-div {
+        width: auto;
+    }
+    
+    .footer-resposive-p {
+        text-wrap: balance;
+        max-width: 321px;
+    }
+
+    .footer-iconos-mobile,
+    .footer-copy-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .desaparecer-en-mobile,
+    .footer-copy-desktop {
+        display: none;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-botomm-enlaces {
+        padding-bottom: 7px;
+    }
+}

@@ -1,0 +1,16 @@
+/* Tamaño de las imágenes para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .slider-image {
+        width: 42px; /* Ajustar el tamaño de las imágenes para evitar CLS */
+        height: auto; /* Mantener la proporción de aspecto */
+    } 
+    
+    .slider-container {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .slider-image {
+        transition: transform 0.5s ease;
+    }
+}
