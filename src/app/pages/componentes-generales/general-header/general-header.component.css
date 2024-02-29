@@ -7,9 +7,6 @@
         display: none;
     }
 
-    .texto-variable {
-        font-size: 11px; /* Tamaño de fuente para pantalla pequeña */
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -18,11 +15,7 @@
     }
 }
 
-.texto-variable-heads {
-    min-width: 0;
-    flex-grow: 1;
-    white-space: nowrap;
-}
+
 
 .mobile-nav {
     position: absolute;

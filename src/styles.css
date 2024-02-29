@@ -67,9 +67,9 @@ h1, h2, h3, p, span, label, input, a {
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 767px) {
     .texto-variable {
-        font-size: 12px; /* Tamaño de fuente para pantalla pequeña */
+        font-size: 11px; /* Tamaño de fuente para pantalla pequeña */
     }
 }
 
