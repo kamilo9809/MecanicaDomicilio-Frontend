@@ -1,0 +1,30 @@
+
+.contenedor-servicios {
+    display: grid;
+}
+
+
+@media screen and (min-width: 768px) {
+    .contenedor-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .contenedor-servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px; /* Espacio entre los elementos */
+    }
+    
+    .contenedor-servicios-div {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los elementos */
+    }
+    
+    .contenedor-servicios-div > div {
+        max-width: 20rem;
+    }
+    
+}

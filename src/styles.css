@@ -2,12 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Krona One';
+    src: url('/assets/fonts/KronaOne-Regular.woff2') format('woff2');
+    /* Agrega aquí otros formatos de fuente si son necesarios */
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/Outfit-VariableFont_wght.woff2') format('woff2');
+    /* Agrega aquí otros formatos de fuente si son necesarios */
+}
+
+
 html, body {
     height: 100%; /* Establece la altura del html y el body en un 100% */
 }
 
 body {
     width: 100%;
+    padding-inline: 4px;
 }
 
 

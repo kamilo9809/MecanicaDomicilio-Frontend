@@ -1,0 +1,53 @@
+@media screen and (max-width: 480px) {
+    .cars-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .cars-mobile {
+        display: none;
+    }
+
+    .contenedor-imagen-titulo-desk {
+        margin-top: -3rem;
+    }
+
+    .cars-tittle {
+        width: 100%;
+    }
+
+    .cars-tittle h2 {
+        text-align: start;
+        font-size: 40px;
+    }
+
+    .recorte {
+        width: 900px; /* Ancho deseado */
+        height: 300px; /* Alto deseado */
+        overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del tamaño especificado */
+    }
+    
+    .recorte img {
+        width: 100%; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+        height: 100%; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Define la forma de recorte como un polígono */
+    }
+
+    .exp-slogan {
+        text-align: start;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .recorte {
+        width: 1000px; /* Ancho deseado */
+        height: 450px; /* Alto deseado */
+        overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del tamaño especificado */
+    }
+    
+    .contenedor-imagen-titulo-desk {
+        margin-top: -7rem;
+    }
+}

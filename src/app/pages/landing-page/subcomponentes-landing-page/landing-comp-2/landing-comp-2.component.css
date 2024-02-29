@@ -1,0 +1,71 @@
+@media screen and (max-width: 480px) {
+    .sobre-nosotros-frase {
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .recorte {
+        width: 500px; /* Ancho deseado */
+        height: 500px; /* Alto deseado */
+        overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del tamaño especificado */
+    }
+    
+    .recorte img {
+        width: 100%; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+        height: 100%; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Define la forma de recorte como un polígono */
+    }
+
+    .sobre-nosotros-frase {
+        margin-top: -8rem;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .sobre-nosotros {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sobre-nosotros-textos {
+        max-width: 23rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .recorte {
+        width: 1500px; /* Ancho deseado */
+        height: 600px; /* Alto deseado */
+        overflow: hidden; /* Oculta cualquier contenido que se extienda más allá del tamaño especificado */
+    }
+
+    .sobre-nosotros-nombre {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sobre-nosotros {
+        padding-inline: 10rem;
+        padding-top: 3rem;
+    }
+
+    .sobre-nosotros-frase {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .sobre-nosotros-frase h3 {
+        width: 43%;
+    }
+
+    .sobre-nosotros-frase-comilla-1 {
+        right: 45%;
+    }
+
+    .sobre-nosotros-frase-comilla-2 {
+        display: none;
+    }
+}
