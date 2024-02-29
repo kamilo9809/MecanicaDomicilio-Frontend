@@ -1,7 +1,3 @@
-.invert-svg {
-    filter: invert(100%);
-}
-
 @media screen and (min-width: 768px) {
     .footer-responsive {
         display: flex;

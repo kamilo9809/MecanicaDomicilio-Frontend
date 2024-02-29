@@ -66,21 +66,26 @@ h1, h2, h3, p, span, label, input, a {
 }
 
 
+.invert-svg {
+    filter: invert(100%);
+}
 
-@media screen and (min-width: 767px) {
+
+
+@media screen and (max-width: 767px) {
     .texto-variable {
-        font-size: 11px; /* Tamaño de fuente para pantalla pequeña */
+        font-size: 11px !important;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
     .texto-variable {
-        font-size: 12px; /* Tamaño de fuente para pantalla pequeña */
+        font-size: 12px !important;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .texto-variable {
-        font-size: 14px; /* Tamaño de fuente para pantalla pequeña */
+        font-size: 14px !important;
     }
 }
