@@ -36,7 +36,7 @@ h1, h2, h3, p, span, label, input, a {
 .boton-animado {
     transition: transform 0.3s ease, background-color, color 0.3s ease;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .boton-animado:hover {
@@ -48,7 +48,6 @@ h1, h2, h3, p, span, label, input, a {
 
 .boton-animado2 {
     padding: 5px 20px;
-    border: 1px solid gray;
     transition: transform 0.3s ease, background-color, color 0.3s ease-in;
 }
 
@@ -86,19 +85,19 @@ h1, h2, h3, p, span, label, input, a {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
     .texto-variable {
         font-size: 11px !important;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
     .texto-variable {
         font-size: 12px !important;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .texto-variable {
         font-size: 14px !important;
     }

@@ -50,4 +50,12 @@
     .contenedor-imagen-titulo-desk {
         margin-top: -7rem;
     }
+
+    .boton-contacto {
+        padding-inline: 21px;
+    }
+}
+
+.cars-tittle h2 {
+    padding-inline: 15px;
 }

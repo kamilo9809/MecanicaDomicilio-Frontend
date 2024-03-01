@@ -1,1 +1,16 @@
-<p>Nuestro trabajo (galeria de fotos)</p>
+<div class="py-8">
+    <div class="w-full flex justify-center">
+        <div class="max-w-[900px] text-center">
+            <h2 class="fuente-krona text-[32px] pb-5 uppercase">Nuestro trabajo</h2>
+            <p >En AutoDom, nos destacamos por ser especialistas en proporcionar resultados de calidad excepcional respaldados por una sólida trayectoria de confiabilidad. </p>
+        </div>
+    </div>
+
+    <div class="pt-20">
+        <app-card-image [imagenes]="imagenesToShow"></app-card-image>
+        <div class="w-full flex justify-center py-8">
+            <button *ngIf="!showAllImages" (click)="showAllImages = true" class="boton-animado2 border ">Cargar más</button>        
+        </div>
+    </div>
+</div>
+

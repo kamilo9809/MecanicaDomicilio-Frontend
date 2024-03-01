@@ -1,0 +1,24 @@
+<div class="galeria">
+  <div class="galeria-item" *ngFor="let imagen of imagenes">
+    <img class="w-full h-full" 
+         [src]="imagen.url" 
+         [sizes]="imagen.sizes" 
+         loading="lazy" 
+         alt="Imagen" 
+         (click)="verImagenGrande(imagen.url)"
+    />
+  </div>  
+</div>
+
+<div id="modal-imagen" [ngClass]="{'modal': true, 'is-visible': imagenGrande.url, 'not-visible': !imagenGrande.url}" (click)="cerrarModal()" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" (touchend)="onTouchEnd($event)">
+  <div class="imagen-container flex items-center justify-center" (click)="$event.stopPropagation()">
+    <div>
+      <button class="boton-animado bg-slate-50 mr-6 boton-izquierda" (click)="verImagenAnterior()">Anterior</button>
+    </div>
+    <img *ngIf="imagenGrande.url" [src]="imagenGrande.url" loading="lazy" class="img-fluid" />
+    <div>
+      <button class="boton-animado bg-slate-50 ml-6 boton-derecha" (click)="verImagenSiguiente()">Siguiente</button>
+    </div>
+    <button class="close-modal boton-animado text-white border" (click)="cerrarModal()">Cerrar</button>
+  </div>
+</div>

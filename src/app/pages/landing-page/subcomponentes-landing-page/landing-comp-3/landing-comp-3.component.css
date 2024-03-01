@@ -1,6 +1,7 @@
 
 .contenedor-servicios {
     display: grid;
+    gap: 1.4rem;
 }
 
 

@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { ComerceComponent } from './pages/comerce/comerce.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LandingPageComponent, ComerceComponent],
+  imports: [RouterOutlet, HttpClientModule, LandingPageComponent, ComerceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
